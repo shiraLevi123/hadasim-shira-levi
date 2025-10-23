@@ -1,13 +1,16 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Card from "./components/card/Card";
+import ProductsList from "./components/productList/productList";
 export default function Home() {
   return (
     <div className="page-container">
       <Header />
 
       <main className="content" style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center", padding: "2rem", marginTop: "5%" }}>
-        <Card
+       <ProductsList/>
+       
+        {/* <Card
           image="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg"
           title="Summer Dress"
           description="A stylish summer dress perfect for sunny days."
@@ -54,7 +57,7 @@ export default function Home() {
           title="Elegant Handbag"
           description="Leather handbag with stylish design."
           price={149.99}
-        />
+        /> */}
       </main>
 
       <Footer />
